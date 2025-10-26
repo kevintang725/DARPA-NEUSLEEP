@@ -1,0 +1,30 @@
+1530.8843 	INFO 	Loaded monitor calibration from ['2025_04_29 14:23']
+1530.8998 	WARNING 	User requested fullscreen with size [1280  720], but screen is actually [1920, 1200]. Using actual size
+1532.5547 	WARNING 	Couldn't measure a consistent frame rate.
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+1532.5553 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([1., 1., 1.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x07E1F590>, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x12D04230>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1200]), stereo=False, units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+1532.5553 	EXP 	window1: recordFrameIntervals = False
+1532.6405 	EXP 	window1: recordFrameIntervals = True
+1533.5222 	WARNING 	Couldn't measure a consistent frame rate.
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+1533.6702 	EXP 	Created PleaseWaitText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.15, italic=False, languageStyle='LTR', name='PleaseWaitText', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Please wait...\n\nTask will begin shortly.', units='norm', win=Window(...), wrapWidth=1)
+1533.6806 	EXP 	Created BeginningFixationCross = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image=str(...), interpolate=True, mask=None, maskParams=None, name='BeginningFixationCross', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.85, 1.  ]), texRes=128, units='norm', win=Window(...))
+1533.6818 	EXP 	Created TopImage = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='TopImage', opacity=1.0, ori=0.0, pos=array([0. , 0.5]), size=array([0.35, 0.75]), texRes=128, units='norm', win=Window(...))
+1533.6827 	EXP 	Created LeftFrame = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='LeftFrame', opacity=1.0, ori=0.0, pos=array([-0.5, -0.5]), size=array([0.38, 0.78]), texRes=128, units='norm', win=Window(...))
+1533.6836 	EXP 	Created LeftImage = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='LeftImage', opacity=1.0, ori=0.0, pos=array([-0.5, -0.5]), size=array([0.35, 0.75]), texRes=128, units='norm', win=Window(...))
+1533.6847 	EXP 	Created RightFrame = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='RightFrame', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.5]), size=array([0.38, 0.78]), texRes=128, units='norm', win=Window(...))
+1533.6857 	EXP 	Created RightImage = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='RightImage', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.5]), size=array([0.35, 0.75]), texRes=128, units='norm', win=Window(...))
+1533.6896 	EXP 	Created TrialFixationEnd = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-9.0, flipHoriz=False, flipVert=False, image=str(...), interpolate=True, mask=None, maskParams=None, name='TrialFixationEnd', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.85, 1.  ]), texRes=128, units='norm', win=Window(...))
+1533.6934 	EXP 	Created EndingFixationCross = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image=str(...), interpolate=True, mask=None, maskParams=None, name='EndingFixationCross', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.85, 1.  ]), texRes=128, units='norm', win=Window(...))
+1533.6958 	WARNING 	t of last frame was 173.79ms (=1/5)
+1533.6958 	EXP 	PleaseWaitText: autoDraw = True
+1535.7690 	WARNING 	t of last frame was 20.48ms (=1/48)
+1542.1939 	DATA 	Keypress: escape
+1542.2233 	EXP 	window1: mouseVisible = True
+1542.2236 	DEBUG 	Saving data for HaririTask_Ver2 ExperimentHandler
+1542.2243 	INFO 	saved data to C:\Users\local.BME\Desktop\HaririTask\data/sub007_HaririTask_Ver2_2025_May_28_0903.psydat
+1542.2359 	INFO 	saved data to 'C:\\Users\\local.BME\\Desktop\\HaririTask\\data/sub007_HaririTask_Ver2_2025_May_28_0903.csv'

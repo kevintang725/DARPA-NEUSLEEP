@@ -1,0 +1,15 @@
+1 Left_Thalamus
+2 Left_Caudate
+3 Left_Putamen
+4 Left_Pallidum
+5 Brain-Stem
+6 Left_Hippocampus
+7 Left_Amygdala
+8 Left_Accumbens
+9 Right_Thalamus
+10 Right_Caudate
+11 Right_Putamen
+12 Right_Pallidum
+13 Right_Hippocampus
+14 Right_Amygdala
+15 Right_Accumbens

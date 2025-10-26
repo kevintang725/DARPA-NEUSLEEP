@@ -1,0 +1,69 @@
+clc
+
+%% ONDA HNR-0500 with AH-2010 Preamplifier Hydrophone Callibration
+dB = -253;
+M_c = 10^((dB + 120)/20);
+
+%M_c = 126e-9; % 50nV/Pa
+C_h = 200-12; % 30pF Onda HGL-0200 Hydrophone
+C_a = 6.3e-12; % 6.3pf Onda AH-2010 Pre-Amplifier
+C_c = 0; % Right Angle Connector
+G = 1; % 20dB Pre-Amplifier Gain
+
+callibration = G*M_c*(C_h/(C_h+C_c+C_a));
+M = 1e-6*((1)./callibration);
+
+%% Setup Connection to Oscilloscope
+ScopeUSBAddress = 'USB0::0xF4ED::0xEE3A::SDS1EDEC5R1189::INSTR';
+channel_A = 1;
+channel_B = 2;
+
+%% Filter
+[A, B, sRateA] = acquireOscilloscopeData(ScopeUSBAddress, channel_A);
+
+ub = 1000e3;
+lb = 500e3;
+fs = sRateA;
+[b, a] = butter(3, [lb, ub]/(fs/2), 'bandpass');
+%[b, a] = butter(3, lb/(fs/2), "high");
+
+%% Measure
+
+n = 1; % Sample Number
+[tA{n}, sA{n}, sRateA] = acquireOscilloscopeData(ScopeUSBAddress, channel_A);
+[tB{n}, sB{n}, sRateB] = acquireOscilloscopeData(ScopeUSBAddress, channel_B);
+%sA{n} = 1e-6*sA{n}./callibration;
+P{n} =1e-6*sA{n}./callibration;
+%P{n} = M*sA{n};
+PF{n} = filtfilt(b,a, P{n});
+
+%% Plot
+plotdata(tA{n}, sA{n}, tB{n}, sB{n},callibration ,PF{n}, P{n});
+%% Plotting
+function plotdata(tA, sA, tB, sB, callibration, PF,P)
+    tA = tA*1000;
+    tB = tB*1000;
+
+    dist = 20;
+    delayT = -100;
+
+    subplot(2,1,1)
+    %plot(tA,sB./max(sB) , 'r') ; hold on
+    plot(tA,sB ,'r'); hold on
+    plot(tA,P, 'k'); hold on
+    %xline(-delayT+(dist*1e-3)/(1500)*1e6, 'b')
+
+    legend('TX','Signal', 'Path Distance')
+    xlabel('Time (ms)')
+    ylabel('Input Voltage (V)')
+    axis([-inf inf  -inf inf])
+    subplot(2,1,2)
+    plot(tA,sB ,'r'); hold on
+    %xline(-delayT+(dist*1e-3)/(1540)*1e6 , 'b'); hold on
+    plot(tA,PF); 
+    %hold off
+    legend('Signal', 'Path Distance')
+    xlabel('Time (ms)')
+    ylabel('Acoustic Pressure (MPa)')
+    axis([-inf inf  -inf inf])
+end

@@ -1,0 +1,148 @@
+222.9480 	INFO 	Loaded monitor calibration from ['2025_04_29 14:23']
+222.9644 	WARNING 	User requested fullscreen with size [1280  720], but screen is actually [1920, 1200]. Using actual size
+224.8563 	WARNING 	Couldn't measure a consistent frame rate.
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+224.8591 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([1., 1., 1.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x12A0F5B0>, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x13094210>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1200]), stereo=False, units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+224.8592 	EXP 	window1: recordFrameIntervals = False
+224.9719 	EXP 	window1: recordFrameIntervals = True
+225.8649 	WARNING 	Couldn't measure a consistent frame rate.
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+226.0377 	EXP 	Created PleaseWaitText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.15, italic=False, languageStyle='LTR', name='PleaseWaitText', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Please wait...\n\nTask will begin shortly.', units='norm', win=Window(...), wrapWidth=1)
+226.0560 	EXP 	Created BeginningFixationCross = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image=str(...), interpolate=True, mask=None, maskParams=None, name='BeginningFixationCross', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.85, 1.  ]), texRes=128, units='norm', win=Window(...))
+226.0578 	EXP 	Created TopImage = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='TopImage', opacity=1.0, ori=0.0, pos=array([0. , 0.5]), size=array([0.35, 0.75]), texRes=128, units='norm', win=Window(...))
+226.0590 	EXP 	Created LeftFrame = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='LeftFrame', opacity=1.0, ori=0.0, pos=array([-0.5, -0.5]), size=array([0.38, 0.78]), texRes=128, units='norm', win=Window(...))
+226.0600 	EXP 	Created LeftImage = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='LeftImage', opacity=1.0, ori=0.0, pos=array([-0.5, -0.5]), size=array([0.35, 0.75]), texRes=128, units='norm', win=Window(...))
+226.0611 	EXP 	Created RightFrame = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='RightFrame', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.5]), size=array([0.38, 0.78]), texRes=128, units='norm', win=Window(...))
+226.0620 	EXP 	Created RightImage = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='RightImage', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.5]), size=array([0.35, 0.75]), texRes=128, units='norm', win=Window(...))
+226.0659 	EXP 	Created TrialFixationEnd = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-9.0, flipHoriz=False, flipVert=False, image=str(...), interpolate=True, mask=None, maskParams=None, name='TrialFixationEnd', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.85, 1.  ]), texRes=128, units='norm', win=Window(...))
+226.0709 	EXP 	Created EndingFixationCross = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image=str(...), interpolate=True, mask=None, maskParams=None, name='EndingFixationCross', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.85, 1.  ]), texRes=128, units='norm', win=Window(...))
+226.0746 	WARNING 	t of last frame was 209.85ms (=1/4)
+226.0746 	EXP 	PleaseWaitText: autoDraw = True
+228.7757 	DATA 	Keypress: 5
+228.7966 	WARNING 	t of last frame was 21.46ms (=1/46)
+228.7966 	EXP 	PleaseWaitText: autoDraw = False
+228.7966 	EXP 	BeginningFixationCross: autoDraw = True
+240.9958 	WARNING 	t of last frame was 20.64ms (=1/48)
+243.8274 	DEBUG 	Read csv file with pandas: ..\HaririTask\HaririTrials_Ver2.csv
+243.8302 	DEBUG 	Clearing unnamed columns from ..\HaririTask\HaririTrials_Ver2.csv
+243.8362 	EXP 	Imported ..\HaririTask\HaririTrials_Ver2.csv as conditions, 110 conditions, 11 params
+243.8365 	EXP 	Created sequence: sequential, trialTypes=110, nReps=1, seed=None
+243.8372 	EXP 	New trial (rep=0, index=0): OrderedDict([('TrialType', 'MatchFaces'), ('Top', 'stimuli/MatchFaces.bmp'), ('Left', 'stimuli/EmptyFace.bmp'), ('Right', 'stimuli/EmptyFace.bmp'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/EmptyFrame.bmp'), ('Correct', 'Null'), ('Emotion', None), ('Gender', None), ('TrialLength', 3), ('FixationLength', 1)])
+244.0155 	WARNING 	t of last frame was 226.73ms (=1/4)
+244.0155 	EXP 	BeginningFixationCross: autoDraw = False
+244.0155 	EXP 	TopImage: image = 'stimuli/MatchFaces.bmp'
+244.0155 	EXP 	LeftFrame: image = 'stimuli/EmptyFrame.bmp'
+244.0155 	EXP 	LeftImage: image = 'stimuli/EmptyFace.bmp'
+244.0155 	EXP 	RightFrame: image = 'stimuli/EmptyFrame.bmp'
+244.0155 	EXP 	RightImage: image = 'stimuli/EmptyFace.bmp'
+244.0155 	EXP 	TopImage: autoDraw = True
+244.0155 	EXP 	LeftFrame: autoDraw = True
+244.0155 	EXP 	LeftImage: autoDraw = True
+244.0155 	EXP 	RightFrame: autoDraw = True
+244.0155 	EXP 	RightImage: autoDraw = True
+246.8459 	EXP 	TopImage: autoDraw = False
+246.8459 	EXP 	LeftFrame: autoDraw = False
+246.8459 	EXP 	LeftImage: autoDraw = False
+246.8459 	EXP 	RightFrame: autoDraw = False
+246.8459 	EXP 	RightImage: autoDraw = False
+246.8459 	EXP 	TrialFixationEnd: autoDraw = True
+247.8420 	EXP 	New trial (rep=0, index=1): OrderedDict([('TrialType', 'Fear'), ('Top', 'stimuli/23M_FE_O.BMP'), ('Left', 'stimuli/23M_FE_O.BMP'), ('Right', 'stimuli/24M_FE_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Fear'), ('Gender', 'Male'), ('TrialLength', 3), ('FixationLength', 1)])
+248.0542 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+248.0542 	EXP 	TrialFixationEnd: autoDraw = False
+248.0542 	EXP 	TopImage: autoDraw = False
+248.0542 	EXP 	LeftFrame: autoDraw = False
+248.0542 	EXP 	LeftImage: autoDraw = False
+248.0542 	EXP 	RightFrame: autoDraw = False
+248.0542 	EXP 	RightImage: autoDraw = False
+248.0542 	EXP 	TrialFixationEnd: autoDraw = False
+248.0542 	EXP 	TopImage: image = 'stimuli/23M_FE_O.BMP'
+248.0542 	EXP 	LeftFrame: image = 'stimuli/EmptyFrame.bmp'
+248.0542 	EXP 	LeftImage: image = 'stimuli/23M_FE_O.BMP'
+248.0542 	EXP 	RightFrame: image = 'stimuli/EmptyFrame.bmp'
+248.0542 	EXP 	RightImage: image = 'stimuli/24M_FE_O.BMP'
+248.0542 	EXP 	TopImage: autoDraw = True
+248.0542 	EXP 	LeftFrame: autoDraw = True
+248.0542 	EXP 	LeftImage: autoDraw = True
+248.0542 	EXP 	RightFrame: autoDraw = True
+248.0542 	EXP 	RightImage: autoDraw = True
+250.8507 	EXP 	TopImage: autoDraw = False
+250.8507 	EXP 	LeftFrame: autoDraw = False
+250.8507 	EXP 	LeftImage: autoDraw = False
+250.8507 	EXP 	RightFrame: autoDraw = False
+250.8507 	EXP 	RightImage: autoDraw = False
+250.8507 	EXP 	TrialFixationEnd: autoDraw = True
+251.8476 	EXP 	New trial (rep=0, index=2): OrderedDict([('TrialType', 'Fear'), ('Top', 'stimuli/19F_FE_O.BMP'), ('Left', 'stimuli/18F_FE_O.BMP'), ('Right', 'stimuli/19F_FE_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Fear'), ('Gender', 'Female'), ('TrialLength', 3), ('FixationLength', 1)])
+251.8847 	EXP 	TrialFixationEnd: autoDraw = False
+251.8847 	EXP 	TopImage: autoDraw = False
+251.8847 	EXP 	LeftFrame: autoDraw = False
+251.8847 	EXP 	LeftImage: autoDraw = False
+251.8847 	EXP 	RightFrame: autoDraw = False
+251.8847 	EXP 	RightImage: autoDraw = False
+251.8847 	EXP 	TrialFixationEnd: autoDraw = False
+251.8847 	EXP 	TopImage: image = 'stimuli/19F_FE_O.BMP'
+251.8847 	EXP 	LeftFrame: image = 'stimuli/EmptyFrame.bmp'
+251.8847 	EXP 	LeftImage: image = 'stimuli/18F_FE_O.BMP'
+251.8847 	EXP 	RightFrame: image = 'stimuli/EmptyFrame.bmp'
+251.8847 	EXP 	RightImage: image = 'stimuli/19F_FE_O.BMP'
+251.8847 	EXP 	TopImage: autoDraw = True
+251.8847 	EXP 	LeftFrame: autoDraw = True
+251.8847 	EXP 	LeftImage: autoDraw = True
+251.8847 	EXP 	RightFrame: autoDraw = True
+251.8847 	EXP 	RightImage: autoDraw = True
+254.8651 	EXP 	TopImage: autoDraw = False
+254.8651 	EXP 	LeftFrame: autoDraw = False
+254.8651 	EXP 	LeftImage: autoDraw = False
+254.8651 	EXP 	RightFrame: autoDraw = False
+254.8651 	EXP 	RightImage: autoDraw = False
+254.8651 	EXP 	TrialFixationEnd: autoDraw = True
+255.8573 	EXP 	New trial (rep=0, index=3): OrderedDict([('TrialType', 'Fear'), ('Top', 'stimuli/17F_FE_O.BMP'), ('Left', 'stimuli/17F_FE_O.BMP'), ('Right', 'stimuli/16F_FE_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Fear'), ('Gender', 'Female'), ('TrialLength', 3), ('FixationLength', 1)])
+255.8903 	EXP 	TrialFixationEnd: autoDraw = False
+255.8903 	EXP 	TopImage: autoDraw = False
+255.8903 	EXP 	LeftFrame: autoDraw = False
+255.8903 	EXP 	LeftImage: autoDraw = False
+255.8903 	EXP 	RightFrame: autoDraw = False
+255.8903 	EXP 	RightImage: autoDraw = False
+255.8903 	EXP 	TrialFixationEnd: autoDraw = False
+255.8903 	EXP 	TopImage: image = 'stimuli/17F_FE_O.BMP'
+255.8903 	EXP 	LeftFrame: image = 'stimuli/EmptyFrame.bmp'
+255.8903 	EXP 	LeftImage: image = 'stimuli/17F_FE_O.BMP'
+255.8903 	EXP 	RightFrame: image = 'stimuli/EmptyFrame.bmp'
+255.8903 	EXP 	RightImage: image = 'stimuli/16F_FE_O.BMP'
+255.8903 	EXP 	TopImage: autoDraw = True
+255.8903 	EXP 	LeftFrame: autoDraw = True
+255.8903 	EXP 	LeftImage: autoDraw = True
+255.8903 	EXP 	RightFrame: autoDraw = True
+255.8903 	EXP 	RightImage: autoDraw = True
+258.8677 	EXP 	TopImage: autoDraw = False
+258.8677 	EXP 	LeftFrame: autoDraw = False
+258.8677 	EXP 	LeftImage: autoDraw = False
+258.8677 	EXP 	RightFrame: autoDraw = False
+258.8677 	EXP 	RightImage: autoDraw = False
+258.8677 	EXP 	TrialFixationEnd: autoDraw = True
+259.8625 	EXP 	New trial (rep=0, index=4): OrderedDict([('TrialType', 'Fear'), ('Top', 'stimuli/21M_FE_O.BMP'), ('Left', 'stimuli/21M_FE_O.BMP'), ('Right', 'stimuli/22M_FE_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Fear'), ('Gender', 'Male'), ('TrialLength', 3), ('FixationLength', 1)])
+259.8911 	EXP 	TrialFixationEnd: autoDraw = False
+259.8911 	EXP 	TopImage: autoDraw = False
+259.8911 	EXP 	LeftFrame: autoDraw = False
+259.8911 	EXP 	LeftImage: autoDraw = False
+259.8911 	EXP 	RightFrame: autoDraw = False
+259.8911 	EXP 	RightImage: autoDraw = False
+259.8911 	EXP 	TrialFixationEnd: autoDraw = False
+259.8911 	EXP 	TopImage: image = 'stimuli/21M_FE_O.BMP'
+259.8911 	EXP 	LeftFrame: image = 'stimuli/EmptyFrame.bmp'
+259.8911 	EXP 	LeftImage: image = 'stimuli/21M_FE_O.BMP'
+259.8911 	EXP 	RightFrame: image = 'stimuli/EmptyFrame.bmp'
+259.8911 	EXP 	RightImage: image = 'stimuli/22M_FE_O.BMP'
+259.8911 	EXP 	TopImage: autoDraw = True
+259.8911 	EXP 	LeftFrame: autoDraw = True
+259.8911 	EXP 	LeftImage: autoDraw = True
+259.8911 	EXP 	RightFrame: autoDraw = True
+259.8911 	EXP 	RightImage: autoDraw = True
+260.9897 	DATA 	Keypress: escape
+261.0266 	EXP 	window1: mouseVisible = True
+261.0268 	DEBUG 	Saving data for HaririTask_Ver2 ExperimentHandler
+261.0294 	INFO 	saved data to C:\Users\local.BME\Desktop\HaririTask\data/sub008_HaririTask_Ver2_2025_May_29_0845.psydat
+261.0305 	INFO 	saved data to 'C:\\Users\\local.BME\\Desktop\\HaririTask\\data/sub008_HaririTask_Ver2_2025_May_29_0845.csv'

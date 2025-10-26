@@ -1,0 +1,81 @@
+clc;clear all; close all
+%%
+
+% import_vhdr_to_eeglab.m
+% This script launches EEGLAB and imports a BrainVision .vhdr file
+
+% Start EEGLAB
+[ALLEEG, EEG, CURRENTSET, ALLCOM] = eeglab;
+
+% Prompt user to select a .vhdr file
+[filename, filepath] = uigetfile('*.vhdr', 'Select a BrainVision .vhdr file');
+if isequal(filename, 0)
+    disp('No file selected. Exiting.');
+    return;
+end
+
+% Load the BrainVision file using pop_loadbv
+EEG = pop_loadbv(filepath, filename);
+
+% Store the dataset into EEGLAB
+[ALLEEG, EEG, CURRENTSET] = eeg_store(ALLEEG, EEG, 1);
+
+% Display dataset info
+eeglab redraw;
+disp(['Successfully loaded: ' EEG.setname]);
+
+
+%% NEUSLEEP
+
+% preprocessing script for input to sleep staging
+
+% convert to double
+EEG.data = double(EEG.data);
+
+% filter data
+EEGchanIdx = [1:4 9:12];
+EOGchanIdx = [5 6];
+EMGchanIdx = [7];
+EKGchanIdx = 8;
+
+% filter EEG data
+EEG = applytochannels(EEG, EEGchanIdx,' pop_eegfiltnew(EEG, 1, 45, [], 0, [], 0);');
+eeglab redraw
+
+% filter EOG data
+EEG = applytochannels(EEG, EOGchanIdx,' pop_eegfiltnew(EEG, 0.3, 20, [], 0, [], 0);');
+eeglab redraw
+
+% filter EMG data
+EEG = applytochannels(EEG, EMGchanIdx,' pop_eegfiltnew(EEG, 10, 85, [], 0, [], 0);');
+eeglab redraw
+
+% notch filter EMG if necessary
+EEG = applytochannels(EEG, EMGchanIdx,' pop_eegfiltnew(EEG, 55, 65, [], 1, [], 0);');
+eeglab redraw
+
+% rescale EKG chan
+EEG = applytochannels(EEG, EKGchanIdx,' pop_eegfiltnew(EEG, 0.3, 0, [], 0, [], 0);');
+eeglab redraw
+
+EEG.data(EKGchanIdx,:) = EEG.data(EKGchanIdx,:)/20;
+eeglab redraw
+
+
+%% Or remove ECG chan
+EEG = pop_select( EEG, 'rmchannel',{'ECG'});
+%eeglab redraw
+
+%% Run ICA
+
+% Run ICA using runica (default algorithm)
+EEG = pop_runica(EEG, 'extended', 1, 'interupt','on', 'lrate', 1e-6);
+[ALLEEG, EEG] = eeg_store(ALLEEG, EEG, CURRENTSET);
+
+
+
+
+
+
+
+

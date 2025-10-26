@@ -1,0 +1,387 @@
+<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="3.0.1">
+  <Settings>
+    <Param name="Completed URL" updates="None" val="" valType="str"/>
+    <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code"/>
+    <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
+    <Param name="Experiment info" updates="None" val="{'participant': '', 'session': '001'}" valType="code"/>
+    <Param name="Force stereo" updates="None" val="True" valType="bool"/>
+    <Param name="Full-screen window" updates="None" val="True" valType="bool"/>
+    <Param name="HTML path" updates="None" val="html" valType="str"/>
+    <Param name="Incomplete URL" updates="None" val="" valType="str"/>
+    <Param name="JS libs" updates="None" val="packaged" valType="str"/>
+    <Param name="Monitor" updates="None" val="testMonitor" valType="str"/>
+    <Param name="Save csv file" updates="None" val="True" valType="bool"/>
+    <Param name="Save excel file" updates="None" val="False" valType="bool"/>
+    <Param name="Save log file" updates="None" val="True" valType="bool"/>
+    <Param name="Save psydat file" updates="None" val="True" valType="bool"/>
+    <Param name="Save wide csv file" updates="None" val="True" valType="bool"/>
+    <Param name="Screen" updates="None" val="1" valType="num"/>
+    <Param name="Show info dlg" updates="None" val="True" valType="bool"/>
+    <Param name="Show mouse" updates="None" val="False" valType="bool"/>
+    <Param name="Units" updates="None" val="use prefs" valType="str"/>
+    <Param name="Use version" updates="None" val="" valType="str"/>
+    <Param name="Window size (pixels)" updates="None" val="[1280, 720]" valType="code"/>
+    <Param name="blendMode" updates="None" val="avg" valType="str"/>
+    <Param name="color" updates="None" val="$[1.000,1.000,1.000]" valType="str"/>
+    <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
+    <Param name="expName" updates="None" val="HaririTask_Ver1" valType="str"/>
+    <Param name="exportHTML" updates="None" val="on Sync" valType="str"/>
+    <Param name="logging level" updates="None" val="debug" valType="code"/>
+  </Settings>
+  <Routines>
+    <Routine name="trial">
+      <CodeComponent name="code_2">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="gcfacetrialstarttime = gregsclock.getTime()&amp;#10;gregstrialclock = core.Clock()&amp;#10;GCFaceTimeLoggerCheck = 0&amp;#10;GCPostFaceFixationLoggerCheck = 0" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="name" updates="None" val="code_2" valType="code"/>
+      </CodeComponent>
+      <CodeComponent name="code_3">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="if TopImage.status == STARTED and GCFaceTimeLoggerCheck == 0:&amp;#10;    gcfacestarttime = gregsclock.getTime()&amp;#10;    GCFaceTimeLoggerCheck = 1" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="name" updates="None" val="code_3" valType="code"/>
+      </CodeComponent>
+      <ImageComponent name="TopImage">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$Top" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="TopImage" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0.5)" valType="code"/>
+        <Param name="size" updates="constant" val="(0.35, 0.75)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$TrialLength" valType="code"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+      <ImageComponent name="LeftFrame">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$EmptyFrame" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="LeftFrame" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(-0.5, -0.5)" valType="code"/>
+        <Param name="size" updates="constant" val="(0.38, 0.78)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$TrialLength" valType="code"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+      <ImageComponent name="LeftImage">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$Left" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="" valType="str"/>
+        <Param name="name" updates="None" val="LeftImage" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(-0.5, -0.5)" valType="code"/>
+        <Param name="size" updates="constant" val="(0.35, 0.75)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$TrialLength" valType="code"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+      <ImageComponent name="RightFrame">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$EmptyFrame" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="RightFrame" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0.5, -0.5)" valType="code"/>
+        <Param name="size" updates="constant" val="(0.38, 0.78)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$TrialLength" valType="code"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+      <ImageComponent name="RightImage">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$Right" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="" valType="str"/>
+        <Param name="name" updates="None" val="RightImage" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0.5, -0.5)" valType="code"/>
+        <Param name="size" updates="constant" val="(0.35, 0.75)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$TrialLength" valType="code"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+      <KeyboardComponent name="key_resp_trial">
+        <Param name="allowedKeys" updates="constant" val="'1','2'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="$Correct" valType="str"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_trial" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$TrialLength" valType="code"/>
+        <Param name="store" updates="constant" val="first key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="True" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <CodeComponent name="code_4">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="if key_resp_trial.keys == '1':&amp;#10;    LeftFrame.setImage(os.path.join(_thisDir,SelectedFrame))&amp;#10;    LeftImage.setImage(os.path.join(_thisDir,Left))&amp;#10;if key_resp_trial.keys == '2':&amp;#10;    RightFrame.setImage(os.path.join(_thisDir,SelectedFrame))&amp;#10;    RightImage.setImage(os.path.join(_thisDir,Right))&amp;#10;if TrialFixationEnd.status == STARTED and GCPostFaceFixationLoggerCheck == 0:&amp;#10;    gcpostfacefixationstarttime = gregsclock.getTime()&amp;#10;    GCPostFaceFixationLoggerCheck = 1" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="name" updates="None" val="code_4" valType="code"/>
+      </CodeComponent>
+      <ImageComponent name="TrialFixationEnd">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="C:\Users\local.BME\Desktop\HaririTask\stimuli\Fixation.bmp" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="TrialFixationEnd" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="size" updates="constant" val="(0.85, 1)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="$TrialLength" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$FixationLength" valType="code"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+      <CodeComponent name="code_5">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="gcpostfacefixationendtime = gregsclock.getTime()&amp;#10;trials.addData('GCFaceStartTime',gcfacestarttime)&amp;#10;trials.addData('GCPostFaceFixationStartTime',gcpostfacefixationstarttime)&amp;#10;trials.addData('GCPostFaceFixationEndTime',gcpostfacefixationendtime)&amp;#10;if key_resp_trial.keys != None:  # we had a response&amp;#10;    trials.addData('key_resp_trial.rt', key_resp_trial.rt)" valType="extendedCode"/>
+        <Param name="name" updates="None" val="code_5" valType="code"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="PleaseWait">
+      <TextComponent name="PleaseWaitText">
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.15" valType="code"/>
+        <Param name="name" updates="None" val="PleaseWaitText" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="text" updates="constant" val="Please wait...&amp;#10;&amp;#10;Task will begin shortly." valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_starttask">
+        <Param name="allowedKeys" updates="constant" val="'5'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_starttask" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="BeginningFixation">
+      <CodeComponent name="code">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="gregsclock = core.Clock()&amp;#10;gcbeginningfixationstarttime = gregsclock.getTime()" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="gcbeginningfixationendtime = gregsclock.getTime()&amp;#10;thisExp.addData('GCBeginningFixationStartTime',gcbeginningfixationstarttime)&amp;#10;thisExp.addData('GCBeginningFixationEndTime',gcbeginningfixationendtime)" valType="extendedCode"/>
+        <Param name="name" updates="None" val="code" valType="code"/>
+      </CodeComponent>
+      <ImageComponent name="BeginningFixationCross">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="C:\Users\local.BME\Desktop\HaririTask\stimuli\Fixation.bmp" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="BeginningFixationCross" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="size" updates="constant" val="(0.85, 1)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="15" valType="code"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+    </Routine>
+    <Routine name="EndingFixation">
+      <CodeComponent name="code_7">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="gcendingfixationstarttime = gregsclock.getTime()" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="name" updates="None" val="code_7" valType="code"/>
+      </CodeComponent>
+      <ImageComponent name="EndingFixationCross">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="C:\Users\local.BME\Desktop\HaririTask\stimuli\Fixation.bmp" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="EndingFixationCross" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="size" updates="constant" val="(0.85, 1)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="15" valType="code"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+      <CodeComponent name="code_6">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="gcendingfixationendtime = gregsclock.getTime()&amp;#10;thisExp.addData('GCEndingFixationStartTime',gcendingfixationstarttime)&amp;#10;thisExp.addData('GCEndingFixationEndTime',gcendingfixationendtime)" valType="extendedCode"/>
+        <Param name="name" updates="None" val="code_6" valType="code"/>
+      </CodeComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="PleaseWait"/>
+    <Routine name="BeginningFixation"/>
+    <LoopInitiator loopType="TrialHandler" name="trials">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('TrialType', 'MatchEmotion'), ('Top', 'stimuli/MatchEmotion.bmp'), ('Left', 'stimuli/EmptyFace.bmp'), ('Right', 'stimuli/EmptyFace.bmp'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/EmptyFrame.bmp'), ('Correct', 'Null'), ('Emotion', None), ('Gender', None), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Anger'), ('Top', 'stimuli/01F_AN_O.bmp'), ('Left', 'stimuli/19F_AN_O.BMP'), ('Right', 'stimuli/01F_AN_O.bmp'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Anger'), ('Gender', 'Female'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Anger'), ('Top', 'stimuli/02f_an_o.bmp'), ('Left', 'stimuli/18F_AN_O.BMP'), ('Right', 'stimuli/02f_an_o.bmp'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Anger'), ('Gender', 'Female'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Anger'), ('Top', 'stimuli/20M_AN_O.BMP'), ('Left', 'stimuli/34M_AN_O.BMP'), ('Right', 'stimuli/20M_AN_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Anger'), ('Gender', 'Male'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Anger'), ('Top', 'stimuli/03F_AN_O.bmp'), ('Left', 'stimuli/03F_AN_O.bmp'), ('Right', 'stimuli/17F_AN_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Anger'), ('Gender', 'Female'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Anger'), ('Top', 'stimuli/21M_CA_O.BMP'), ('Left', 'stimuli/21M_CA_O.BMP'), ('Right', 'stimuli/33M_AN_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Anger'), ('Gender', 'Male'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Anger'), ('Top', 'stimuli/22M_AN_O.BMP'), ('Left', 'stimuli/32M_AN_O.BMP'), ('Right', 'stimuli/22M_AN_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Anger'), ('Gender', 'Male'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Anger'), ('Top', 'stimuli/23M_AN_O.BMP'), ('Left', 'stimuli/23M_AN_O.BMP'), ('Right', 'stimuli/31M_AN_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Anger'), ('Gender', 'Male'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Anger'), ('Top', 'stimuli/05F_AN_O.bmp'), ('Left', 'stimuli/05F_AN_O.bmp'), ('Right', 'stimuli/16F_AN_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Anger'), ('Gender', 'Female'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Anger'), ('Top', 'stimuli/06F_AN_O.bmp'), ('Left', 'stimuli/15F_AN_O.BMP'), ('Right', 'stimuli/06F_AN_O.bmp'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Anger'), ('Gender', 'Female'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Anger'), ('Top', 'stimuli/24M_AN_O.BMP'), ('Left', 'stimuli/24M_AN_O.BMP'), ('Right', 'stimuli/30M_AN_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Anger'), ('Gender', 'Male'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'MatchShape'), ('Top', 'stimuli/MatchShapes.bmp'), ('Left', 'stimuli/EmptyFace.bmp'), ('Right', 'stimuli/EmptyFace.bmp'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/EmptyFrame.bmp'), ('Correct', 'Null'), ('Emotion', None), ('Gender', None), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Shape'), ('Top', 'stimuli/horizontal.bmp'), ('Left', 'stimuli/horizontal.bmp'), ('Right', 'stimuli/circle.bmp'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Shape'), ('Gender', None), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Shape'), ('Top', 'stimuli/vertical.bmp'), ('Left', 'stimuli/horizontal.bmp'), ('Right', 'stimuli/vertical.bmp'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Shape'), ('Gender', None), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Shape'), ('Top', 'stimuli/horizontal.bmp'), ('Left', 'stimuli/horizontal.bmp'), ('Right', 'stimuli/vertical.bmp'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Shape'), ('Gender', None), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Shape'), ('Top', 'stimuli/horizontal.bmp'), ('Left', 'stimuli/circle.bmp'), ('Right', 'stimuli/horizontal.bmp'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Shape'), ('Gender', None), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Shape'), ('Top', 'stimuli/circle.bmp'), ('Left', 'stimuli/circle.bmp'), ('Right', 'stimuli/vertical.bmp'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Shape'), ('Gender', None), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Shape'), ('Top', 'stimuli/circle.bmp'), ('Left', 'stimuli/circle.bmp'), ('Right', 'stimuli/horizontal.bmp'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Shape'), ('Gender', None), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Shape'), ('Top', 'stimuli/vertical.bmp'), ('Left', 'stimuli/circle.bmp'), ('Right', 'stimuli/vertical.bmp'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Shape'), ('Gender', None), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Shape'), ('Top', 'stimuli/circle.bmp'), ('Left', 'stimuli/vertical.bmp'), ('Right', 'stimuli/circle.bmp'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Shape'), ('Gender', None), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Shape'), ('Top', 'stimuli/vertical.bmp'), ('Left', 'stimuli/horizontal.bmp'), ('Right', 'stimuli/vertical.bmp'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Shape'), ('Gender', None), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Shape'), ('Top', 'stimuli/vertical.bmp'), ('Left', 'stimuli/vertical.bmp'), ('Right', 'stimuli/circle.bmp'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Shape'), ('Gender', None), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'MatchEmotion'), ('Top', 'stimuli/MatchEmotion.bmp'), ('Left', 'stimuli/EmptyFace.bmp'), ('Right', 'stimuli/EmptyFace.bmp'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/EmptyFrame.bmp'), ('Correct', 'Null'), ('Emotion', None), ('Gender', None), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Fear'), ('Top', 'stimuli/07F_FE_O.BMP'), ('Left', 'stimuli/07F_FE_O.BMP'), ('Right', 'stimuli/14F_FE_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Fear'), ('Gender', 'Female'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Fear'), ('Top', 'stimuli/25M_FE_O.BMP'), ('Left', 'stimuli/29M_FE_O.BMP'), ('Right', 'stimuli/25M_FE_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Fear'), ('Gender', 'Male'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Fear'), ('Top', 'stimuli/26M_FE_O.BMP'), ('Left', 'stimuli/26M_FE_O.BMP'), ('Right', 'stimuli/28M_FE_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Fear'), ('Gender', 'Male'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Fear'), ('Top', 'stimuli/08F_FE_O.BMP'), ('Left', 'stimuli/13F_FE_O.BMP'), ('Right', 'stimuli/08F_FE_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Fear'), ('Gender', 'Female'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Fear'), ('Top', 'stimuli/09F_FE_O.BMP'), ('Left', 'stimuli/09F_FE_O.BMP'), ('Right', 'stimuli/12F_FE_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Fear'), ('Gender', 'Female'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Fear'), ('Top', 'stimuli/27M_FE_O.BMP'), ('Left', 'stimuli/26M_FE_O.BMP'), ('Right', 'stimuli/27M_FE_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Fear'), ('Gender', 'Male'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Fear'), ('Top', 'stimuli/28M_FE_O.BMP'), ('Left', 'stimuli/28M_FE_O.BMP'), ('Right', 'stimuli/25M_FE_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Fear'), ('Gender', 'Male'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Fear'), ('Top', 'stimuli/10F_FE_O.BMP'), ('Left', 'stimuli/11F_FE_O.BMP'), ('Right', 'stimuli/10F_FE_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Fear'), ('Gender', 'Female'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Fear'), ('Top', 'stimuli/29M_FE_O.BMP'), ('Left', 'stimuli/29M_FE_O.BMP'), ('Right', 'stimuli/24M_FE_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Fear'), ('Gender', 'Male'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Fear'), ('Top', 'stimuli/11F_FE_O.BMP'), ('Left', 'stimuli/10F_FE_O.BMP'), ('Right', 'stimuli/11F_FE_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Fear'), ('Gender', 'Female'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Match Emotion'), ('Top', 'stimuli/MatchEmotion.bmp'), ('Left', 'stimuli/EmptyFace.bmp'), ('Right', 'stimuli/EmptyFace.bmp'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/EmptyFrame.bmp'), ('Correct', 'Null'), ('Emotion', None), ('Gender', None), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Happy'), ('Top', 'stimuli/19F_HA_O.BMP'), ('Left', 'stimuli/19F_HA_O.BMP'), ('Right', 'stimuli/18F_HA_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Happy'), ('Gender', 'Female'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Happy'), ('Top', 'stimuli/17F_HA_O.BMP'), ('Left', 'stimuli/16F_HA_O.BMP'), ('Right', 'stimuli/17F_HA_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Happy'), ('Gender', 'Female'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Happy'), ('Top', 'stimuli/43M_HA_O.BMP'), ('Left', 'stimuli/42M_HA_O.BMP'), ('Right', 'stimuli/43M_HA_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Happy'), ('Gender', 'Male'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Happy'), ('Top', 'stimuli/41M_HA_O.BMP'), ('Left', 'stimuli/41M_HA_O.BMP'), ('Right', 'stimuli/40M_HA_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Happy'), ('Gender', 'Male'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Happy'), ('Top', 'stimuli/15F_HA_O.BMP'), ('Left', 'stimuli/15F_HA_O.BMP'), ('Right', 'stimuli/14F_HA_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Happy'), ('Gender', 'Female'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Happy'), ('Top', 'stimuli/13F_HA_O.BMP'), ('Left', 'stimuli/13F_HA_O.BMP'), ('Right', 'stimuli/12F_HA_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Happy'), ('Gender', 'Female'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Happy'), ('Top', 'stimuli/39M_HA_O.BMP'), ('Left', 'stimuli/38M_HA_O.BMP'), ('Right', 'stimuli/39M_HA_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Happy'), ('Gender', 'Male'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Happy'), ('Top', 'stimuli/37M_HA_O.BMP'), ('Left', 'stimuli/37M_HA_O.BMP'), ('Right', 'stimuli/36M_HA_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Happy'), ('Gender', 'Male'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Happy'), ('Top', 'stimuli/35M_HA_O.BMP'), ('Left', 'stimuli/34M_HA_O.BMP'), ('Right', 'stimuli/35M_HA_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Happy'), ('Gender', 'Male'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Happy'), ('Top', 'stimuli/11F_HA_O.BMP'), ('Left', 'stimuli/10F_HA_O.BMP'), ('Right', 'stimuli/11F_HA_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Happy'), ('Gender', 'Female'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Match Shape'), ('Top', 'stimuli/MatchShapes.bmp'), ('Left', 'stimuli/EmptyFace.bmp'), ('Right', 'stimuli/EmptyFace.bmp'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/EmptyFrame.bmp'), ('Correct', 'Null'), ('Emotion', None), ('Gender', None), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Shape'), ('Top', 'stimuli/circle.bmp'), ('Left', 'stimuli/vertical.bmp'), ('Right', 'stimuli/circle.bmp'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Shape'), ('Gender', None), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Shape'), ('Top', 'stimuli/horizontal.bmp'), ('Left', 'stimuli/circle.bmp'), ('Right', 'stimuli/horizontal.bmp'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Shape'), ('Gender', None), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Shape'), ('Top', 'stimuli/vertical.bmp'), ('Left', 'stimuli/vertical.bmp'), ('Right', 'stimuli/horizontal.bmp'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Shape'), ('Gender', None), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Shape'), ('Top', 'stimuli/horizontal.bmp'), ('Left', 'stimuli/circle.bmp'), ('Right', 'stimuli/horizontal.bmp'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Shape'), ('Gender', None), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Shape'), ('Top', 'stimuli/horizontal.bmp'), ('Left', 'stimuli/horizontal.bmp'), ('Right', 'stimuli/vertical.bmp'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Shape'), ('Gender', None), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Shape'), ('Top', 'stimuli/vertical.bmp'), ('Left', 'stimuli/vertical.bmp'), ('Right', 'stimuli/circle.bmp'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Shape'), ('Gender', None), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Shape'), ('Top', 'stimuli/circle.bmp'), ('Left', 'stimuli/horizontal.bmp'), ('Right', 'stimuli/circle.bmp'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Shape'), ('Gender', None), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Shape'), ('Top', 'stimuli/circle.bmp'), ('Left', 'stimuli/vertical.bmp'), ('Right', 'stimuli/circle.bmp'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Shape'), ('Gender', None), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Shape'), ('Top', 'stimuli/vertical.bmp'), ('Left', 'stimuli/vertical.bmp'), ('Right', 'stimuli/horizontal.bmp'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Shape'), ('Gender', None), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Shape'), ('Top', 'stimuli/horizontal.bmp'), ('Left', 'stimuli/horizontal.bmp'), ('Right', 'stimuli/circle.bmp'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Shape'), ('Gender', None), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Match Emotion'), ('Top', 'stimuli/MatchEmotion.bmp'), ('Left', 'stimuli/EmptyFace.bmp'), ('Right', 'stimuli/EmptyFace.bmp'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/EmptyFrame.bmp'), ('Correct', 'Null'), ('Emotion', None), ('Gender', None), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Anger'), ('Top', 'stimuli/42M_AN_O.BMP'), ('Left', 'stimuli/42M_AN_O.BMP'), ('Right', 'stimuli/43M_AN_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Anger'), ('Gender', 'Male'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Anger'), ('Top', 'stimuli/07F_AN_O.BMP'), ('Left', 'stimuli/07F_AN_O.BMP'), ('Right', 'stimuli/14F_AN_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Anger'), ('Gender', 'Female'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Anger'), ('Top', 'stimuli/40M_AN_O.BMP'), ('Left', 'stimuli/41M_AN_O.BMP'), ('Right', 'stimuli/40M_AN_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Anger'), ('Gender', 'Male'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Anger'), ('Top', 'stimuli/38M_AN_O.BMP'), ('Left', 'stimuli/39M_AN_O.BMP'), ('Right', 'stimuli/38M_AN_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Anger'), ('Gender', 'Male'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Anger'), ('Top', 'stimuli/08F_AN_O.BMP'), ('Left', 'stimuli/08F_AN_O.BMP'), ('Right', 'stimuli/13F_AN_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Anger'), ('Gender', 'Female'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Anger'), ('Top', 'stimuli/36M_AN_O.BMP'), ('Left', 'stimuli/37M_AN_O.BMP'), ('Right', 'stimuli/36M_AN_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Anger'), ('Gender', 'Male'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Anger'), ('Top', 'stimuli/09F_AN_O.BMP'), ('Left', 'stimuli/12F_AN_O.BMP'), ('Right', 'stimuli/09F_AN_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Anger'), ('Gender', 'Female'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Anger'), ('Top', 'stimuli/34M_AN_O.BMP'), ('Left', 'stimuli/35M_AN_O.BMP'), ('Right', 'stimuli/34M_AN_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Anger'), ('Gender', 'Male'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Anger'), ('Top', 'stimuli/10F_AN_O.BMP'), ('Left', 'stimuli/10F_AN_O.BMP'), ('Right', 'stimuli/11F_AN_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Anger'), ('Gender', 'Female'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Anger'), ('Top', 'stimuli/12F_AN_O.BMP'), ('Left', 'stimuli/12F_AN_O.BMP'), ('Right', 'stimuli/13F_AN_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Anger'), ('Gender', 'Female'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Match Emotion'), ('Top', 'stimuli/MatchEmotion.bmp'), ('Left', 'stimuli/EmptyFace.bmp'), ('Right', 'stimuli/EmptyFace.bmp'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/EmptyFrame.bmp'), ('Correct', 'Null'), ('Emotion', None), ('Gender', None), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Happy'), ('Top', 'stimuli/20M_HA_O.BMP'), ('Left', 'stimuli/21M_HA_O.BMP'), ('Right', 'stimuli/20M_HA_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Happy'), ('Gender', 'Male'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Happy'), ('Top', 'stimuli/01F_HA_O.bmp'), ('Left', 'stimuli/01F_HA_O.bmp'), ('Right', 'stimuli/02F_HA_O.bmp'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Happy'), ('Gender', 'Female'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Happy'), ('Top', 'stimuli/22M_HA_O.BMP'), ('Left', 'stimuli/23M_HA_O.BMP'), ('Right', 'stimuli/22M_HA_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Happy'), ('Gender', 'Male'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Happy'), ('Top', 'stimuli/24M_HA_O.BMP'), ('Left', 'stimuli/24M_HA_O.BMP'), ('Right', 'stimuli/25M_HA_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Happy'), ('Gender', 'Male'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Happy'), ('Top', 'stimuli/03F_HA_O.bmp'), ('Left', 'stimuli/05F_HA_O.bmp'), ('Right', 'stimuli/03F_HA_O.bmp'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Happy'), ('Gender', 'Female'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Happy'), ('Top', 'stimuli/26M_HA_O.BMP'), ('Left', 'stimuli/26M_HA_O.BMP'), ('Right', 'stimuli/27M_HA_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Happy'), ('Gender', 'Male'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Happy'), ('Top', 'stimuli/06F_HA_O.bmp'), ('Left', 'stimuli/07F_HA_O.BMP'), ('Right', 'stimuli/06F_HA_O.bmp'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Happy'), ('Gender', 'Female'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Happy'), ('Top', 'stimuli/08F_HA_O.BMP'), ('Left', 'stimuli/08F_HA_O.BMP'), ('Right', 'stimuli/09F_HA_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Happy'), ('Gender', 'Female'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Happy'), ('Top', 'stimuli/28M_HA_O.BMP'), ('Left', 'stimuli/29M_HA_O.BMP'), ('Right', 'stimuli/28M_HA_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Happy'), ('Gender', 'Male'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Happy'), ('Top', 'stimuli/10F_HA_O.BMP'), ('Left', 'stimuli/10F_HA_O.BMP'), ('Right', 'stimuli/06F_HA_O.bmp'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Happy'), ('Gender', 'Female'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Match Emotion'), ('Top', 'stimuli/MatchEmotion.bmp'), ('Left', 'stimuli/EmptyFace.bmp'), ('Right', 'stimuli/EmptyFace.bmp'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/EmptyFrame.bmp'), ('Correct', 'Null'), ('Emotion', None), ('Gender', None), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Fear'), ('Top', 'stimuli/23M_FE_O.BMP'), ('Left', 'stimuli/23M_FE_O.BMP'), ('Right', 'stimuli/24M_FE_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Fear'), ('Gender', 'Male'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Fear'), ('Top', 'stimuli/19F_FE_O.BMP'), ('Left', 'stimuli/18F_FE_O.BMP'), ('Right', 'stimuli/19F_FE_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Fear'), ('Gender', 'Female'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Fear'), ('Top', 'stimuli/17F_FE_O.BMP'), ('Left', 'stimuli/17F_FE_O.BMP'), ('Right', 'stimuli/16F_FE_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Fear'), ('Gender', 'Female'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Fear'), ('Top', 'stimuli/15F_FE_O.BMP'), ('Left', 'stimuli/18F_FE_O.BMP'), ('Right', 'stimuli/15F_FE_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Fear'), ('Gender', 'Female'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Fear'), ('Top', 'stimuli/21M_FE_O.BMP'), ('Left', 'stimuli/21M_FE_O.BMP'), ('Right', 'stimuli/22M_FE_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Fear'), ('Gender', 'Male'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Fear'), ('Top', 'stimuli/29M_FE_O.BMP'), ('Left', 'stimuli/30M_FE_O.BMP'), ('Right', 'stimuli/29M_FE_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Fear'), ('Gender', 'Male'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Fear'), ('Top', 'stimuli/31M_FE_O.BMP'), ('Left', 'stimuli/31M_FE_O.BMP'), ('Right', 'stimuli/38M_FE_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Fear'), ('Gender', 'Male'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Fear'), ('Top', 'stimuli/09F_FE_O.BMP'), ('Left', 'stimuli/07F_FE_O.BMP'), ('Right', 'stimuli/09F_FE_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Fear'), ('Gender', 'Female'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Fear'), ('Top', 'stimuli/11F_FE_O.BMP'), ('Left', 'stimuli/12F_FE_O.BMP'), ('Right', 'stimuli/11F_FE_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '2'), ('Emotion', 'Fear'), ('Gender', 'Female'), ('TrialLength', 3), ('FixationLength', 1)]), OrderedDict([('TrialType', 'Fear'), ('Top', 'stimuli/34M_FE_O.BMP'), ('Left', 'stimuli/34M_FE_O.BMP'), ('Right', 'stimuli/33M_FE_O.BMP'), ('EmptyFrame', 'stimuli/EmptyFrame.bmp'), ('SelectedFrame', 'stimuli/RedFrame.bmp'), ('Correct', '1'), ('Emotion', 'Fear'), ('Gender', 'Male'), ('TrialLength', 3), ('FixationLength', 1)])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="HaririTrials_Ver1.csv" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="trials" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="trial"/>
+    <LoopTerminator name="trials"/>
+    <Routine name="EndingFixation"/>
+  </Flow>
+</PsychoPy2experiment>

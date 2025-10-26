@@ -1,0 +1,14 @@
+ID	Sex	Age	Ethinicity	Weight	Height	Sleep Position	Global PSQI Score	STN Distance
+17	Female	18	Asian	110	157	Supine (Sleeping on your back)	10	68.8
+18	Male	24	Asian	154	175	Supine (Sleeping on your back)	2	69.1
+19	Female	25	Asian	153	163	Supine (Sleeping on your back)	9	74.2
+20	Female	28	White	135	165	Fetal (Sleeping on the side)	7	62.7
+21	Female	27	Asian	90	155	Supine (Sleeping on your back)	8	66.6
+22	Male	38	Asian	128	164	Fetal (Sleeping on the side)	7	69.3
+23	Female	18	Asian	138	"172,72"	Fetal (Sleeping on the side)	6	65.1
+24	Male	26	White	160	173	Prone (Sleeping on the stomach)	7	72.8
+25	Male	33	Asian	200	172	Fetal (Sleeping on the side)	10	82.3
+26	Male	27	Asian	154	170	Provocative (Sleeping on the side - Semi Prone)	9	73.6
+27	Male	21	Prefer not to say	180	"167,64"	Supine (Sleeping on your back)	7	74.1
+28	Female	20	White	135	152	Fetal (Sleeping on the side)	6	69.8
+								

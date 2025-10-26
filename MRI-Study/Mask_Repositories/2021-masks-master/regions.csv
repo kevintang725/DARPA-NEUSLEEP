@@ -1,0 +1,33 @@
+Biotype,Region anatomy,Hemisphere,Z Value,Template x coordinate,Template y coordinate,Template z coordinate,Filename
+Default Mode Circuit,anterior medial PreFrontal Cortex,Medial,22,-2,50,-6,Medial_amPFC_DefaultModeNetwork_n2_50_n6.nii.gz
+Default Mode Circuit,Angular Gyrus,Left,26.1,-46,-70,32,Left_AG_DefaultModeNetwork_n46_n70_32.nii.gz
+Default Mode Circuit,Angular Gyrus,Right,20.6,50,-62,26,Right_AG_DefaultModeNetwork_50_n62_26.nii.gz
+Default Mode Circuit,Posterior Cingulate,Medial,29.8,0,-50,28,Medial_PCC_DefaultModeNetwork_0_n50_28.nii.gz
+Salience Circuit,Anterior Insula,Left,11.9,-38,14,-6,Left_antInsula_Salience_n38_14_n6.nii.gz
+Salience Circuit,Anterior Insula,Right,14.8,38,18,2,Right_antInsula_Salience_38_18_2.nii.gz
+Salience Circuit,Amygdala,Left,6.9,AAL,AAL,AAL,Left_Amygdala_Salience.nii.gz
+Salience Circuit,Amygdala,Right,14.7,AAL,AAL,AAL,Right_Amygdala_Salience.nii.gz
+Attention Circuit,medial superior PreFrontal Cortex,Medial,10.4,-2,14,52,Medial_msPFC_Attention_n2_14_52.nii.gz
+Attention Circuit,Lateral PreFrontal Cortex,Left,13.9,-44,6,32,Left_lPFC_Attention_n44_6_32.nii.gz
+Attention Circuit,Lateral PreFrontal Cortex,Right,11.3,50,10,28,Right_lPFC_Attention_50_10_28.nii.gz
+Attention Circuit,anterior Inferior Parietal Lobule,Left,10.4,-30,-54,40,Left_aIPL_Attention_n30_n54_40.nii.gz
+Attention Circuit,anterior Inferior Parietal Lobule,Right,10.4,38,-56,48,Right_aIPL_Attention_38_n56_48.nii.gz
+Attention Circuit,Precuneus,Left,13,-14,-66,52,Left_precuneus_Attention_n14_n66_52.nii.gz
+Attention Circuit,Precuneus,Right,11.3,18,-68,52,Right_precuneus_Attention_18_n68_52.nii.gz
+Negative Affect Circuit: Sad,pregenual Anterior Cingulate,Medial,6.3,6,42,4,Medial_pgACC_NegativeAffect_n6_42_n4.nii.gz
+Negative Affect Circuit: Sad,Anterior Insula,Left,17.4,-36,20,-4,Left_antInsula_NegativeAffect_n36_20_n4.nii.gz
+Negative Affect Circuit: Sad,Anterior Insula,Right,16.1,38,22,-4,Right_antInsula_NegativeAffect_38_22_n4.nii.gz
+Negative Affect Circuit: Sad,Amygdala,Left,28.4,AAL,AAL,AAL,Left_Amygdala_NegativeAffect.nii.gz
+Negative Affect Circuit: Sad,Amygdala,Right,25.2,AAL,AAL,AAL,Right_Amygdala_NegativeAffect.nii.gz
+Negative Affect Circuit: Threat Conscious,dorsal Anterior Cingulate,Medial,8.2,6,22,32,Medial_dACC_NegativeAffect_6_22_32.nii.gz
+Negative Affect Circuit: Threat Conscious,Amygdala,Left,28.4,AAL,AAL,AAL,Left_Amygdala_NegativeAffect.nii.gz
+Negative Affect Circuit: Threat Conscious,Amygdala,Right,25.2,AAL,AAL,AAL,Right_Amygdala_NegativeAffect.nii.gz
+Negative Affect Circuit: Threat Nonconscious,subgenual Anterior Cingulate,Medial,5.6,4,26,-10,Medial_sgACC_NegativeAffect_4_26_n10
+Negative Affect Circuit: Threat Nonconscious,Amygdala,Left,28.4,AAL,AAL,AAL,Left_Amygdala_NegativeAffect.nii.gz
+Negative Affect Circuit: Threat Nonconscious,Amygdala,Right,25.2,AAL,AAL,AAL,Right_Amygdala_NegativeAffect.nii.gz
+Positive Affect Circuit: Happy,ventral Medial Prefrontal Cortex,Medial,13.1,-2,56,-8,Medial_vmPFC_PositiveAffect_n2_56_n8.nii.gz
+Positive Affect Circuit: Happy,Ventral Striatum,Left,14,FSL,FSL,FSL,Left_vStriatum_PositiveAffect.nii.gz
+Positive Affect Circuit: Happy,Ventral Striatum,Right,7.9,FSL,FSL,FSL,Right_vStriatum_PositiveAffect.nii.gz
+Cognitive Control Circuit,dorsal Anterior Cingulate,Medial,20,0,18,46,Medial_dACC_CognitiveControl_0_18_46.nii.gz
+Cognitive Control Circuit,dorsal Lateral PreFrontal Cortex/Inferior Frontal Gyrus,Left,20.4,-44,6,32,Left_dlPFC_CognitiveControl_n44_6_32.nii.gz
+Cognitive Control Circuit,dorsal Lateral PreFrontal Cortex/Inferior Frontal Gyrus,Right,12.4,44,34,22,Right_dlPFC_CognitiveControl_44_34_22.nii.gz

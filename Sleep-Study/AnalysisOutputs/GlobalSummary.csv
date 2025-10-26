@@ -1,0 +1,7 @@
+Metric,Value
+||ProbMatrix_D1||_F,1.74646069373942
+||ProbMatrix_D2||_F,1.72351622524808
+FrobeniusDistance_probs,0.184633453355589
+Mantel_r_probs,0.957126374988338
+Mantel_p_probs,0
+NumPairedSubjects,15

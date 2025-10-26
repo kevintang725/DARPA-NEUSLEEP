@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: PicoSDK
+Version: 1.0
+Summary: PicoSDK Python wrapper
+Home-page: https://www.picotech.com
+Author: Pico Technology Ltd
+Author-email: support@picotech.com
+License-File: LICENSE.md

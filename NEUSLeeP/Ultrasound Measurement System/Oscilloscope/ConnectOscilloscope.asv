@@ -1,0 +1,7 @@
+%% 
+clc
+clear all
+close all
+
+%%
+[timeOut, dataOut, sRate] = acquireOscilloscopeData(connStr, channel)'USB0::0xF4ED::0xEE3A::SDS1EDEC5R1189::INSTR';

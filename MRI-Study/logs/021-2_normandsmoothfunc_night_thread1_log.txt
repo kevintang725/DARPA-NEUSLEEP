@@ -1,0 +1,20 @@
+Found sub-021-2_func_ses-night_task-rest_run-01_acq-AP_mc_tu_brain.nii.gz for 021-2
+Applying MNI transform to sub-021-2_func_ses-night_task-rest_run-01_acq-AP_mc_tu_brain.nii.gz for 021-2
+applywarp -i /Volumes/Kevin-SSD/MRI-Study/sub-021-2/ses-night/func/sub-021-2_func_ses-night_task-rest_run-01_acq-AP_mc_tu_brain.nii.gz -w /Volumes/Kevin-SSD/MRI-Study/sub-021-2/ses-night/anat/reg/highres2standard_warp --premat=/Volumes/Kevin-SSD/MRI-Study/sub-021-2/ses-night/func/reg/sub-021-2_func_ses-night_task-rest_run-01_acq-AP_mc_tu_example_func2highres.mat -r /Users/kevintang/fsl/data/standard/MNI152_T1_2mm_brain.nii.gz -o /Volumes/Kevin-SSD/MRI-Study/sub-021-2/ses-night/func/sub-021-2_func_ses-night_task-rest_run-01_acq-AP_mc_tu_brain_MNI -m /Users/kevintang/fsl/data/standard/MNI152_T1_2mm_brain_mask_dil
+Smoothing sub-021-2_func_ses-night_task-rest_run-01_acq-AP_mc_tu_brain.nii.gz for 021-2 at a FWHM of 6.0
+3dmerge -1blur_fwhm 6.0 -doall -prefix /Volumes/Kevin-SSD/MRI-Study/sub-021-2/ses-night/func/sub-021-2_func_ses-night_task-rest_run-01_acq-AP_mc_tu_brain_MNI+6.0FWHM.nii.gz /Volumes/Kevin-SSD/MRI-Study/sub-021-2/ses-night/func/sub-021-2_func_ses-night_task-rest_run-01_acq-AP_mc_tu_brain_MNI.nii.gz
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (1721.6 MB)
+....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+
+Found sub-021-2_func_ses-night_task-hariri_run-01_acq-AP_mc_tu_brain.nii.gz for 021-2
+Applying MNI transform to sub-021-2_func_ses-night_task-hariri_run-01_acq-AP_mc_tu_brain.nii.gz for 021-2
+applywarp -i /Volumes/Kevin-SSD/MRI-Study/sub-021-2/ses-night/func/sub-021-2_func_ses-night_task-hariri_run-01_acq-AP_mc_tu_brain.nii.gz -w /Volumes/Kevin-SSD/MRI-Study/sub-021-2/ses-night/anat/reg/highres2standard_warp --premat=/Volumes/Kevin-SSD/MRI-Study/sub-021-2/ses-night/func/reg/sub-021-2_func_ses-night_task-hariri_run-01_acq-AP_mc_tu_example_func2highres.mat -r /Users/kevintang/fsl/data/standard/MNI152_T1_2mm_brain.nii.gz -o /Volumes/Kevin-SSD/MRI-Study/sub-021-2/ses-night/func/sub-021-2_func_ses-night_task-hariri_run-01_acq-AP_mc_tu_brain_MNI -m /Users/kevintang/fsl/data/standard/MNI152_T1_2mm_brain_mask_dil
+Smoothing sub-021-2_func_ses-night_task-hariri_run-01_acq-AP_mc_tu_brain.nii.gz for 021-2 at a FWHM of 6.0
+3dmerge -1blur_fwhm 6.0 -doall -prefix /Volumes/Kevin-SSD/MRI-Study/sub-021-2/ses-night/func/sub-021-2_func_ses-night_task-hariri_run-01_acq-AP_mc_tu_brain_MNI+6.0FWHM.nii.gz /Volumes/Kevin-SSD/MRI-Study/sub-021-2/ses-night/func/sub-021-2_func_ses-night_task-hariri_run-01_acq-AP_mc_tu_brain_MNI.nii.gz
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (1260.2 MB)
+..............................................................................................................................................................................................................................................................................................................................................................................
+

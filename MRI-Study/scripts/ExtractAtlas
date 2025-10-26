@@ -1,0 +1,134 @@
+#!/bin/tcsh -f
+# Split hemispheres with AFNI 3dcalc using x>0 (Left) and x<0 (Right).
+# Usage:
+#   tcsh ExtractAtlas_FromLUT_unilateral_3dcalc.tcsh [OUTDIR] [THR] [RES] [CORT_LUT] [SUB_LUT]
+
+set histchars = ""
+
+# ---- args ----
+set outdir = "$1"
+if ("$outdir" == "") set outdir = "/Volumes/Kevin-SSD/MRI-Study/Mask_Templates/Harvard-Oxford"
+
+set thr = "$2"
+if ("$thr" == "") set thr = "25"
+
+set res = "$3"
+if ("$res" == "") set res = "1mm"
+
+set CORT_LUT = "/Volumes/Kevin-SSD/MRI-Study/Mask_Templates/Harvard-Oxford/HarvardOxford-Cortical-LUT.txt"
+set SUB_LUT  = "/Volumes/Kevin-SSD/MRI-Study/Mask_Templates/Harvard-Oxford/HarvardOxford-Subcortical-LUT.txt"
+
+if ("$CORT_LUT" == "" || "$SUB_LUT" == "") then
+  echo "ERROR: Provide both LUT paths:"
+  echo "  tcsh $0 OUTDIR THR RES /path/HarvardOxford-Cortical-LUT.txt /path/HarvardOxford-Subcortical-LUT.txt"
+  exit 1
+endif
+
+# ---- FSL atlases (as before) ----
+if (! $?FSLDIR) then
+  echo "ERROR: FSLDIR is not set."; exit 1
+endif
+set HO_DIR   = "$FSLDIR/data/atlases/HarvardOxford"
+set IMG_CORT = "${HO_DIR}/HarvardOxford-cort-maxprob-thr${thr}-${res}.nii.gz"
+set IMG_SUB  = "${HO_DIR}/HarvardOxford-sub-maxprob-thr${thr}-${res}.nii.gz"
+
+foreach f ($IMG_CORT $IMG_SUB $CORT_LUT $SUB_LUT)
+  if (! -f "$f") then
+    echo "ERROR: Missing: $f"; exit 1
+  endif
+end
+
+# ---- output dirs ----
+set odir_cort = "${outdir}/HarvardOxford-cort-${res}-thr${thr}"
+set odir_sub  = "${outdir}/HarvardOxford-sub-${res}-thr${thr}"
+mkdir -p "$odir_cort" "$odir_sub"
+
+# ---- name cleaner ----
+set clean_sed = 's/[()\",;:\/\[\]\{\}\+]+//g; s/[[:space:]]+/_/g; s/^_+|_+$//g'
+
+@ err = 0
+
+# ================= Cortical (bilateral + L/R via x sign) =================
+set IMG  = "$IMG_CORT"
+set LUT  = "$CORT_LUT"
+set ODIR = "$odir_cort"
+set PREF = "HarvardOxford-cort"
+
+echo ">>> Cortical from: $IMG (3dcalc split by x)"
+set idx_list = (`grep -E "^[[:space:]]*[0-9]+" "$LUT" | sed -E 's/^[[:space:]]+//' | awk '{print $1}'`)
+set name_list_clean = (`grep -E "^[[:space:]]*[0-9]+" "$LUT" \
+  | sed -E 's/^[[:space:]]+[0-9]+[[:space:]]+//' \
+  | sed -E "$clean_sed"`)
+
+if ($#idx_list == 0 || $#name_list_clean == 0) then
+  echo "ERROR: Could not parse cortical LUT."; @ err = 1
+else if ($#idx_list != $#name_list_clean) then
+  echo "ERROR: Cortical LUT index/name mismatch."; @ err = 1
+else
+  @ n = 1
+  while ( $n <= $#idx_list )
+    set idx  = $idx_list[$n]
+    set name = $name_list_clean[$n]
+    if ("$idx" != "0" && "$name" != "") then
+      # Bilateral (optional, keep for reference)
+      set bi  = "${ODIR}/${name}.nii.gz"
+      if (! -f "$bi") then
+        #3dcalc -a "$IMG" -expr "equals(a,$idx)" -prefix "$bi" -byte -nscale
+        echo "  + bilateral: $bi"
+      endif
+      # Left: x>0
+      set outL = "${ODIR}/${name}_L.nii.gz"
+      if (! -f "$outL") then
+        3dcalc -a "$IMG" -expr "equals(a,$idx)*step(x)" -prefix "$outL" -byte -nscale
+        echo "    -> $outL"
+      endif
+      # Right: x<0
+      set outR = "${ODIR}/${name}_R.nii.gz"
+      if (! -f "$outR") then
+        3dcalc -a "$IMG" -expr "equals(a,$idx)*step(-x)" -prefix "$outR" -byte -nscale
+        echo "    -> $outR"
+      endif
+    endif
+    @ n++
+  end
+endif
+
+# ================= Subcortical (already unilateral in LUT) =================
+set IMG  = "$IMG_SUB"
+set LUT  = "$SUB_LUT"
+set ODIR = "$odir_sub"
+set PREF = "HarvardOxford-sub"
+
+echo ">>> Subcortical from: $IMG (labels already Left_/Right_)"
+set idx_list = (`grep -E "^[[:space:]]*[0-9]+" "$LUT" | sed -E 's/^[[:space:]]+//' | awk '{print $1}'`)
+set name_list_clean = (`grep -E "^[[:space:]]*[0-9]+" "$LUT" \
+  | sed -E 's/^[[:space:]]+[0-9]+[[:space:]]+//' \
+  | sed -E "$clean_sed"`)
+
+if ($#idx_list == 0 || $#name_list_clean == 0) then
+  echo "ERROR: Could not parse subcortical LUT."; @ err = 1
+else if ($#idx_list != $#name_list_clean) then
+  echo "ERROR: Subcortical LUT index/name mismatch."; @ err = 1
+else
+  @ n = 1
+  while ( $n <= $#idx_list )
+    set idx  = $idx_list[$n]
+    set name = $name_list_clean[$n]
+    if ("$idx" != "0" && "$name" != "") then
+      set outmask = "${ODIR}/${name}.nii.gz"
+      if (! -f "$outmask") then
+        3dcalc -a "$IMG" -expr "equals(a,$idx)" -prefix "$outmask" -byte -nscale
+        echo "  + $outmask"
+      endif
+    endif
+    @ n++
+  end
+endif
+
+if ($err) then
+  echo "Finished with errors."; exit 2
+endif
+
+echo "Done."
+echo " Cortical masks (bilateral + _L/_R) -> $odir_cort"
+echo " Subcortical masks (unilateral)     -> $odir_sub"
