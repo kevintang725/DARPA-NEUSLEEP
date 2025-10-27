@@ -64,7 +64,6 @@ Windows 10 or 11, Mac OS Monterey 12 or above.
 ### Instructions
 ## MRI Analysis 
 1.) Open a terminal and navigate into _MRI-Study_ and create a folder for each subject with the following subdirectory structure
-
 .
 ├── sub-001-1
 │   └── ses-night
