@@ -94,6 +94,7 @@ Windows 10 or 11, Mac OS Monterey 12 or above.
 │           ├── sub-001-1_func_ses-night_task-rest_run-01_acq-PA.nii.gz
 │           └── sub-001-1_func_ses-night_task-rest_run-01_acq-PA.json
 
+
 3.) Open a terminal navigate to _MRI-Study/scripts_
 
 4.) Run 1st level analysis on subjects _./NSSSAnalysisPipeline_Censor0.4_Hariri.sh <sub_#-session_#> <night> <session_#>_ (i.e. _./NSSSAnalysisPipeline_Censor0.4_Hariri.sh 001-1 night 1_)
