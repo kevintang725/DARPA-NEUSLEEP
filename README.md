@@ -1,4 +1,4 @@
-# A wearable-bioadhesive patch enabling ultrasound neuromodulation and real-time electrophysiological monitoring for REM sleep enhancement
+# A wearable and bioadhesive patch enabling ultrasound deep brain stimulation and real-time electrophysiological monitoring for REM sleep enhancement
 ## Author Information
 _**Kai Wing Kevin Tang1,†**_, Benjamin Baird2,†, William D. Moscoso-Barrera1,†, Mengxia Yu1,†, Mengmeng Yao1, Jinmo Jeong1, Ilya Pyatnitskiy1, Anakaren Romero Lozano1, Jiachen Wang1, Ju-Chun Hsieh1, Tony Chae1, Daniel Song1, Julieta Garcia1, Rithvik Mittapalli1, Adam Bush1, Wynn Legon3, Vincent Mysliwiec4,* Gregory A. Fonzo5,* Huiliang Wang1,*
 
