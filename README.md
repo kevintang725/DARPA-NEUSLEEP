@@ -1,6 +1,6 @@
 # A wearable-bioadhesive patch enabling ultrasound neuromodulation and real-time electrophysiological monitoring for REM sleep enhancement
 ## Author Information
-_Kai Wing Kevin Tang1,†_, Benjamin Baird2,†, William D. Moscoso-Barrera1,†, Mengxia Yu1,†, Mengmeng Yao1, Jinmo Jeong1, Ilya Pyatnitskiy1, Anakaren Romero Lozano1, Jiachen Wang1, Ju-Chun Hsieh1, Tony Chae1, Daniel Song1, Julieta Garcia1, Rithvik Mittapalli1, Adam Bush1, Wynn Legon3, Vincent Mysliwiec4,* Gregory A. Fonzo5,* Huiliang Wang1,*
+_**Kai Wing Kevin Tang1,†**_, Benjamin Baird2,†, William D. Moscoso-Barrera1,†, Mengxia Yu1,†, Mengmeng Yao1, Jinmo Jeong1, Ilya Pyatnitskiy1, Anakaren Romero Lozano1, Jiachen Wang1, Ju-Chun Hsieh1, Tony Chae1, Daniel Song1, Julieta Garcia1, Rithvik Mittapalli1, Adam Bush1, Wynn Legon3, Vincent Mysliwiec4,* Gregory A. Fonzo5,* Huiliang Wang1,*
 
 BioRxiv Preprint: doi: https://doi.org/10.1101/2025.10.19.683337
 
@@ -13,7 +13,7 @@ BioRxiv Preprint: doi: https://doi.org/10.1101/2025.10.19.683337
 
 †These authors contributed equally to this work. 
 
-†First-Author: kevin.tang@utexas.edu
+†First-Author: kevin.tang@utexas.edu, kwkt725@gmail.com
 
 *Corresponding to: mysliwiec@uthscsa.edu; gfonzo@austin.utexas.edu; evanwang@utexas.edu
 
